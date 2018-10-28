@@ -1,7 +1,7 @@
 <template>
     <div class="solar-system">
         <div class="btn-panel">
-            <input type="range"/>
+            <input title="speed" v-on:input="changeSpeed" v-model="speed" type="range" min="1" max="250" step="1"/>
         </div>
         <div class="sun"><img src="https://png.icons8.com/color/200/000000/sun-star.png"></div>
         <div class="sun2"><img src="https://png.icons8.com/color/200/000000/sun-star.png"></div>
@@ -21,12 +21,35 @@
         <div class="uranus-path"></div>
         <div class="neptune"><img src="https://png.icons8.com/color/150/000000/neptune-planet.png"></div>
         <div class="neptune-path"></div>
+        <planet img="https://png.icons8.com/color/50/000000/mercury-planet.png"></planet>
     </div>
 </template>
 
 <script>
+    import Planet from "@/components/Planet";
     export default {
-        name: "SolarSystem"
+        name: "SolarSystem",
+        components: {Planet},
+        data() {
+            return {
+                speed: 0
+            }
+        },
+        mounted() {
+            // this.changeSpeed();
+        },
+        methods: {
+            changeSpeed() {
+                document.getElementsByClassName('mercury')[0].style.animationDuration = (8.8 / this.speed) + 's';
+                document.getElementsByClassName('venus')[0].style.animationDuration = (22.5 / this.speed) + 's';
+                document.getElementsByClassName('earth')[0].style.animationDuration = (36.5 / this.speed) + 's';
+                document.getElementsByClassName('mars')[0].style.animationDuration = (68.7 / this.speed) + 's';
+                document.getElementsByClassName('jupiter')[0].style.animationDuration = (432.9 / this.speed) + 's';
+                document.getElementsByClassName('saturn')[0].style.animationDuration = (1075.3 / this.speed) + 's';
+                document.getElementsByClassName('uranus')[0].style.animationDuration = (3066 / this.speed) + 's';
+                document.getElementsByClassName('neptune')[0].style.animationDuration = (6014.8 / this.speed) + 's';
+            }
+        }
     }
 </script>
 

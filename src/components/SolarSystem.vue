@@ -1,8 +1,5 @@
 <template>
     <div class="solar-system">
-        <div class="btn-panel">
-            <input title="speed" v-on:input="changeSpeed" v-model="speed" type="range" min="1" max="250" step="1"/>
-        </div>
         <div class="sun"><img src="../assets/planets/sun-star.png" alt="sun"></div>
         <div class="sun2"><img src="../assets/planets/sun-star.png" alt="sun"></div>
         <div class="mercury"><img src="../assets/planets/mercury-planet.png" alt="mercury"></div>
@@ -22,6 +19,9 @@
         <div class="neptune"><img src="../assets/planets/neptune-planet.png" alt="neptune"></div>
         <div class="neptune-path"></div>
 <!--        <planet img="https://img.icons8.com/color/50/000000/mercury-planet.png"></planet>-->
+        <div class="btn-panel">
+            <input title="speed" v-on:input="changeSpeed" v-model="speed" type="range" min="1" max="250" step="1"/>
+        </div>
     </div>
 </template>
 
@@ -107,7 +107,7 @@
             transform: rotate(0deg) translate(-288px) rotate(0deg);
         }
         to {
-            transform: rotate(-360deg) translate(-288px) rotate(360deg);
+            transform: rotate(-360deg) translate(-288px) rotate(3600deg);
         }
     }
     @keyframes saturn {
@@ -115,7 +115,7 @@
             transform: rotate(0deg) translate(-348px) rotate(0deg);
         }
         to {
-            transform: rotate(-360deg) translate(-348px) rotate(360deg);
+            transform: rotate(-360deg) translate(-348px) rotate(3600deg);
         }
     }
     @keyframes uranus {
@@ -123,7 +123,7 @@
             transform: rotate(0deg) translate(-390px) rotate(0deg);
         }
         to {
-            transform: rotate(-360deg) translate(-390px) rotate(360deg);
+            transform: rotate(-360deg) translate(-390px) rotate(3600deg);
         }
     }
     @keyframes neptune {
@@ -288,5 +288,8 @@
     .neptune img {
         width: 16px;
         height: 16px;
+    }
+    .btn-panel {
+        z-index: 1000;
     }
 </style>

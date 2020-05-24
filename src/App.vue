@@ -1,19 +1,15 @@
 <template>
   <div id="app">
     <p>
-      <span id="fog">A long</span>
-      <span id="fog-2">long time</span>
-      <span id="glow">ago,</span>
-      <span id="light">in a</span>
-      <span id="stars">galaxy</span>
-      <span id="stars-2">far</span>
-      <span id="small-stars">far</span>
-      <span id="small-stars-2">away&hellip;</span>
+      <span id="fog"/>
+      <span id="fog-2"/>
+      <span id="glow"/>
+      <span id="light"/>
+      <span id="stars"/>
+      <span id="stars-2"/>
+      <span id="small-stars"/>
+      <span id="small-stars-2"/>
     </p>
-    <!--<div id="nav">-->
-      <!--<router-link to="/">Home</router-link> |-->
-      <!--<router-link to="/about">About</router-link>-->
-    <!--</div>-->
     <router-view/>
 
   </div>

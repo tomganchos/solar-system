@@ -3,25 +3,25 @@
         <div class="btn-panel">
             <input title="speed" v-on:input="changeSpeed" v-model="speed" type="range" min="1" max="250" step="1"/>
         </div>
-        <div class="sun"><img src="https://png.icons8.com/color/200/000000/sun-star.png"></div>
-        <div class="sun2"><img src="https://png.icons8.com/color/200/000000/sun-star.png"></div>
-        <div class="mercury"><img src="https://png.icons8.com/color/50/000000/mercury-planet.png"></div>
+        <div class="sun"><img src="../assets/planets/sun-star.png" alt="sun"></div>
+        <div class="sun2"><img src="../assets/planets/sun-star.png" alt="sun"></div>
+        <div class="mercury"><img src="../assets/planets/mercury-planet.png" alt="mercury"></div>
         <div class="mercury-path"></div>
-        <div class="venus"><img src="https://png.icons8.com/color/50/000000/venus-planet.png"></div>
+        <div class="venus"><img src="../assets/planets/venus-planet.png" alt="venus"></div>
         <div class="venus-path"></div>
-        <div class="earth"><img src="https://png.icons8.com/color/50/000000/globe.png"></div>
+        <div class="earth"><img src="../assets/planets/globe.png" alt="earth"></div>
         <div class="earth-path"></div>
-        <div class="mars"><img src="https://png.icons8.com/color/50/000000/mars-planet.png"></div>
+        <div class="mars"><img src="../assets/planets/mars-planet.png" alt="mars"></div>
         <div class="mars-path"></div>
-        <div class="jupiter"><img src="https://png.icons8.com/color/150/000000/jupiter-planet.png"></div>
+        <div class="jupiter"><img src="../assets/planets/jupiter-planet.png" alt="jupiter"></div>
         <div class="jupiter-path"></div>
-        <div class="saturn"><img src="https://png.icons8.com/color/150/000000/saturn-planet.png"></div>
+        <div class="saturn"><img src="../assets/planets/saturn-planet.png" alt="saturn"></div>
         <div class="saturn-path"></div>
-        <div class="uranus"><img src="https://png.icons8.com/color/150/000000/uranus-planet.png"></div>
+        <div class="uranus"><img src="../assets/planets/uranus-planet.png" alt="uranus"></div>
         <div class="uranus-path"></div>
-        <div class="neptune"><img src="https://png.icons8.com/color/150/000000/neptune-planet.png"></div>
+        <div class="neptune"><img src="../assets/planets/neptune-planet.png" alt="neptune"></div>
         <div class="neptune-path"></div>
-        <planet img="https://png.icons8.com/color/50/000000/mercury-planet.png"></planet>
+<!--        <planet img="https://img.icons8.com/color/50/000000/mercury-planet.png"></planet>-->
     </div>
 </template>
 
